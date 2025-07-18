@@ -1,0 +1,84 @@
+/* Body Background: Removed image, use solid color */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #a3cbf2; /* Light solid background */
+}
+
+.overlay {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Main Container */
+.container {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  background: #dae7f4;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings and Text */
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Image Styling */
+img {
+  width: 50%;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 28px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* YouTube Video Section */
+.video-section {
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.video-section iframe {
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
