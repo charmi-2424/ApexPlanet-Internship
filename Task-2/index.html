@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateX - Classic CSS</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#home" data-page="home" class="nav-link logo">InnovateX</a>
+            <nav class="desktop-nav">
+                <a href="#home" data-page="home" class="nav-link active">Home</a>
+                <a href="#about" data-page="about" class="nav-link">About</a>
+                <a href="#services" data-page="services" class="nav-link">Services</a>
+                <a href="#portfolio" data-page="portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" data-page="contact" class="nav-link">Contact</a>
+            </nav>
+            <a href="#contact" data-page="contact" class="nav-link get-started-btn">Get Started</a>
+            <button id="mobile-menu-button" class="mobile-menu-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="mobile-nav">
+            <a href="#home" data-page="home" class="nav-link active">Home</a>
+            <a href="#about" data-page="about" class="nav-link">About</a>
+            <a href="#services" data-page="services" class="nav-link">Services</a>
+            <a href="#portfolio" data-page="portfolio" class="nav-link">Portfolio</a>
+            <a href="#contact" data-page="contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Page Section -->
+        <section id="home-page" class="page-section active">
+            <div class="hero-section">
+                <div class="container">
+                    <h1>Innovating the Future</h1>
+                    <p>We build digital experiences that drive success and inspire users.</p>
+                    <div class="hero-buttons">
+                        <a href="#about" data-page="about" class="nav-link primary">Learn More</a>
+                        <a href="#portfolio" data-page="portfolio" class="nav-link secondary">Our Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page Section -->
+        <section id="about-page" class="page-section">
+            <div class="page-container bg-gray-50">
+                <div class="container">
+                    <div class="about-content">
+                        <div>
+                            <img src="https://placehold.co/600x400/a5b4fc/312e81?text=InnovateX+Team" alt="About Us Image">
+                        </div>
+                        <div class="about-text">
+                            <h2>About InnovateX</h2>
+                            <h3>Pioneering Digital Solutions</h3>
+                            <p>InnovateX was founded on the principle of bridging creativity with technology. We are a passionate team of designers, developers, and strategists dedicated to helping businesses thrive in the digital landscape.</p>
+                            <p>Our collaborative process ensures we understand your unique challenges and goals, allowing us to deliver bespoke solutions that resonate with your audience and drive measurable results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Page Section -->
+        <section id="services-page" class="page-section">
+            <div class="page-container bg-white">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2>Our Services</h2>
+                        <p>Comprehensive Solutions for Your Digital Needs</p>
+                    </div>
+                    <div class="grid services-grid">
+                        <!-- Service Cards will be injected here by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Page Section -->
+        <section id="portfolio-page" class="page-section">
+            <div class="page-container bg-white">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2>Our Portfolio</h2>
+                        <p>A Glimpse of Our Proudest Work</p>
+                    </div>
+                    <div class="grid portfolio-grid">
+                        <!-- Portfolio Items will be injected here by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page Section -->
+        <section id="contact-page" class="page-section">
+            <div class="page-container bg-gray-50">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2>Contact Us</h2>
+                        <p>Let's Build Something Amazing Together</p>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <div id="form-success-message">
+                            <p>Your message is sent. We will contact you soon.</p>
+                        </div>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="submit-btn">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>&copy; 2025 InnovateX. All rights reserved.</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.494v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg></a>
+                <a href="#"><svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616v.064c0 2.298 1.634 4.212 3.793 4.649-.65.177-1.354.23-2.06.088.621 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.588-7.52 2.588-1.46 0-2.897-.086-4.311-.254 2.679 1.728 5.863 2.735 9.281 2.735 10.563 0 16.34-8.773 16.34-16.34 0-.251 0-.501-.015-.749.947-.684 1.774-1.536 2.427-2.525z"></path></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
