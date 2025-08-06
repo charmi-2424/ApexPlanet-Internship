@@ -1,0 +1,17 @@
+.topic-card {
+    @apply p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-b-4 hover:transform hover:-translate-y-2;
+}
+.quiz-option {
+    @apply w-full p-4 border-2 border-purple-400/30 rounded-lg text-left transition duration-200 bg-gray-800/50 hover:bg-purple-900/50 hover:border-purple-400/60;
+}
+.quiz-option.correct {
+    background-color: #166534 !important; /* green-800 */
+    color: white;
+    border-color: #4ade80 !important; /* green-400 */
+    text-shadow: 0 0 5px #4ade80;
+}
+.quiz-option.incorrect {
+    background-color: #991b1b !important; /* red-800 */
+    color: white;
+    border-color: #f87171 !important; /* red-400 */
+}

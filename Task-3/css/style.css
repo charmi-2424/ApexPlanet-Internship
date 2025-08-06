@@ -1,0 +1,42 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #111827; /* gray-900 */
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+}
+.text-glow {
+    text-shadow: 0 0 8px rgba(192, 132, 252, 0.6), 0 0 20px rgba(192, 132, 252, 0.4);
+}
+.text-glow-strong {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 25px rgba(192, 132, 252, 0.6);
+}
+.nav-link {
+    @apply text-gray-300 hover:text-purple-300 transition duration-300 relative py-1;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #c084fc; /* purple-400 */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav-link.active {
+    @apply text-purple-300 font-bold;
+}
+.cosmic-card {
+    @apply bg-gray-800/50 border border-purple-400/20 rounded-2xl shadow-2xl shadow-purple-900/20 backdrop-blur-sm transition-all duration-300 hover:border-purple-400/50 hover:shadow-purple-700/30;
+}
+.action-button {
+    @apply w-full font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center space-x-2 border-b-4 hover:transform hover:-translate-y-1;
+}
+.hidden {
+    display: none;
+}
